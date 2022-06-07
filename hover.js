@@ -1,7 +1,16 @@
-const buttonContainer = document.querySelector("div.buttons");
+const links = document.querySelectorAll(".buttons a");
 
-for(let i = 0; i < buttonContainer.children.length; i++){
-    buttonContainer.children[i].addEventListener("mouseover", function(){
-        buttonContainer.style.left = 0;
-    })
+function showLink(val){
+    hideLinks();
+    val.style.left = 0;
+}
+
+function hideLinks(){
+    for(let link of links){
+        link.style.left = "-5%";
+    }
+}
+
+for(let i = 0; i < links.length; i++){
+    links[i].addEventListener("mouseout", hideLinks);
 }

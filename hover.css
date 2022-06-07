@@ -14,36 +14,40 @@ body{
 }
 
 a{
-    position: absolute;
-    left: -5%;
+    display: block;
     font-size: 1.1em;
+    width: 7%;
     color: white;
     text-decoration: none;
     padding: 12px 30px 12px 12px;
-    border-radius: 5px;
-}
-
-.buttons{
-    /* position: relative; */
-    top: 4%;
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    row-gap: 5px;
+    border-radius: 0 5px 5px 0;
+    transition: left ease 0.4s;
 }
 
 .buttons a:nth-of-type(1){
-    background: rgb(44, 117, 44) ;
+    position: absolute;
+    left: -5%;
+    top: 20px;
+    background: rgb(44, 117, 44);
 }
 
 .buttons a:nth-of-type(2){
+    position: absolute;
+    left: -5%;
+    top: 70px;
     background: dodgerblue;
 }
 
 .buttons a:nth-of-type(3){
+    position: absolute;
+    left: -5%;
+    top: 120px;
     background: orangered;
 }
 
 .buttons a:nth-of-type(4){
+    position: absolute;
+    left: -5%;
+    top: 170px;
     background: #333;
 }
