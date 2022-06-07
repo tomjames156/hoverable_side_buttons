@@ -18,6 +18,7 @@ a{
     font-size: 1.1em;
     width: 7%;
     color: white;
+    overflow: none;
     text-decoration: none;
     padding: 12px 30px 12px 12px;
     border-radius: 0 5px 5px 0;
